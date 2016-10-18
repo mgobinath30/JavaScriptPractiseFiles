@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Creating Own String Method</title>
+</head>
+<body>
+<script type="text/javascript">
+	//Own String method
+	String.prototype.revMe=function(){
+		var len=this.length;
+		alert(len);
+		var userString="";
+		var customString="";
+		for(i=0;i<len;i++){
+        userString += this[i];
+		}
+		//console.log(userString[9])// e
+        while(len--){
+        	//console.count(len+"called");
+      customString +=userString[len];
+        }
+
+		console.log(customString);
+	}
+	var name="Hi Welcome to Programming with javascript";
+	console.log(name.revMe());
+</script>
+</body>
+</html>
+
+<!--Another Easy Mrthod For Reverse the String-->
+
+<<!-- html>
+<body>
+<script type="text/javascript">
+	var message="Welcome to java scriupt programming";
+	var SepartedChar = message.split(""); // Separed word by word in "message" string
+
+	var reverseChar = SepartedChar.reverse(); // Reverse my Array
+
+	var requiredOp=reverseChar.join(""); // Join is converting array to string 
+
+	document.write(requiredOp);
+
+</script>
+</body>
+</html> -->
